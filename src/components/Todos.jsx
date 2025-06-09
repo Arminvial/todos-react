@@ -49,7 +49,8 @@ export default function Todos() {
     let newTodos = todos.filter ((todoItem)=> {
       return todo.id != todoItem.id ;
     })
-    setTodos(newTodos) ;
+    //اون تودویی که قراره حذف بشه ایدیشو بگیر اگر ایدیش برابر نبود با تودویی که داری پیمایش میکنی فیلتر کن
+    setTodos(newTodos) ;//حالا اگه به جای مساوی تعجب فقط مساوی بزاریم فقط اونی که روش کلیک کردیمو نشون میده رو سایت درحالی که ما به غیر از اونو میخوایم
   }
   //باید برای حذف اول متغیر را در صفحه مادر ایجاد کنیم و صفحه به صفحه پاس بدیم به دیلیت ایکون
 
@@ -84,7 +85,7 @@ export default function Todos() {
   
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="w-full px-4 py-8 mx-auto shadow lg:w-1/3  bg-white">
+      <div className="w-full px-4 py-8 mx-auto shadow-2xl lg:w-1/3  bg-white border-b-4">
         <div className="flex items-center mb-6">
           <h1 className="mr-6 text-4xl font-bold text-purple-600">
             {" "}
